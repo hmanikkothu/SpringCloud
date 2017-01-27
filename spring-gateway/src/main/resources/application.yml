@@ -1,0 +1,10 @@
+server:
+    port: 8090
+
+zuul:
+    routes:
+        eurkclient-adjective: /adjective/**
+        eurkclient-article: /article/**
+        eurkclient-noun: /noun/**
+        eurkclient-subject: /subject/**
+        eurkclient-verb: /verb/**

@@ -1,0 +1,13 @@
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/hmanikkothu/ConfigData
+    rabbitmq:
+        host: 10.13.120.96
+        port: 5671
+
+server:
+    port: 8001
+
