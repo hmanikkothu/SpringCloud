@@ -20,8 +20,8 @@ Run the following servers using the commang "mvn spring-boot:run"
 * spring-gateway
 
 ### Verify the apps
-* Navigate to the Eureka server "http://localhost:8010/". Verify that it is able to display all the microservices got registered with it.
-* Verify each word servers; navigate from the link shown on the Eureka server admin home page.
+* Navigate to the Eureka server "http://localhost:8010/". Verify that it is able to display the status of all the microservices got registered with it.
+* Verify all the 'eurkclient' services; you may use the links displayed in Eureka server home page (under the status).
 * Navigate to the config-server @ http://localhost:8001/config-client/northamerica to make sure that it is able to get the config file for the northamerica profile that is currently the active profile
 * Navigate to the config-client @ http://localhost:8002/word-of-the-day to make sure that is able to get the config through the spring bus
 * Navigate to the eurkclient-sentence @ http://localhost:8020/sentence to make sure that it is able to resolve and access all service end points through the Eureka server
