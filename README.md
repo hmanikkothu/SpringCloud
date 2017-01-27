@@ -3,7 +3,7 @@ Spring cloude sample &amp; demos
 
 ### 1. Rabbitmq
 * Setup a rabbitmq server for the spring bus to use as an AMQP message broker.
-> You may use docker container for running rabbitmq for this purpose: docker run -d -p 5672:5672 -p 15672:15672 dockerfile/rabbitmq
+ * You may use docker container for running rabbitmq for this purpose: docker run -d -p 5672:5672 -p 15672:15672 dockerfile/rabbitmq
 * Update the application.yml of the config-server to point to the AMQP server
 
 ### 2. Run spring cloud applications
