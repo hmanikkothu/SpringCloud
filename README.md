@@ -6,7 +6,7 @@ Spring cloude sample &amp; demos
  * You may use docker container for running rabbitmq for this purpose: docker run -d -p 5672:5672 -p 15672:15672 dockerfile/rabbitmq
 * Update the application.yml of the config-server to point to the AMQP server
 
-### 2. Run spring cloud applications
+### 2. Run spring cloud services
 Run the following servers using the commang "mvn spring-boot:run" 
 * config-server	
 * config-client	
@@ -19,7 +19,7 @@ Run the following servers using the commang "mvn spring-boot:run"
 * eurkclient-verb	
 * spring-gateway
 
-### Verify the apps
+### Verify the services
 * Navigate to the Eureka server "http://localhost:8010/". Verify that it is able to display the status of all the microservices got registered with it.
 * Verify all the 'eurkclient' services; you may use the links displayed in Eureka server home page (under the status).
 * Navigate to the config-server @ http://localhost:8001/config-client/northamerica to make sure that it is able to get the config file for the northamerica profile that is currently the active profile
